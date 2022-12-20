@@ -4,8 +4,8 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "start": "vite",
-    "build": "tsc && vite build",
+    "start": "vite --mode development",
+    "build": "tsc && vite build --mode production",
     "preview": "vite preview",
     "lint": "eslint src --ext js,jsx,ts,tsx",
     "deploy": "gh-pages -d dist"
