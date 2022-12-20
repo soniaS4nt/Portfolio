@@ -13,4 +13,3 @@ const NotFound: React.FC = () => {
   );
 };
 export default NotFound;
-// find the path of img in the assets folder
