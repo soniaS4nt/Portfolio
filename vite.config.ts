@@ -5,6 +5,8 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
     plugins: [react()],
     base: '/Portfolio/',
+    assetsInclude: ['src/assets', 'src/assets/**/*'],
+    publicDir: 'src/assets',
     /* build: {
     if (mode === 'production') {
       return {
