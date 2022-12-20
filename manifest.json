@@ -1,0 +1,12 @@
+{
+    
+  "short_name": "Portfolio",
+  "name": "Portfolio Sonia Chaparro",
+  "icons": [
+    {
+      "src": "programer1.svg",
+      "sizes": "78x44 78x44 78x44 78x44",
+      "type": "image/svg+xml"
+    }
+  ]
+}
