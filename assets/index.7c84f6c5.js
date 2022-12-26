@@ -468,10 +468,6 @@ a:hover {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    margin-top: inherit;
-    border-color:aqua;
-    border-style: solid;
-    border-width: 1rem;
 `,Qd=Nr.h1`
     background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
     -webkit-background-clip: text;
