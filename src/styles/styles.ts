@@ -1,5 +1,17 @@
 import styled from "styled-components";
 
+export const ContainerMadre = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin-top: inherit;
+    border-color:aqua;
+    border-style: solid;
+    border-width: 1rem;
+`;
+
 export const Title = styled.h1`
     background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
     -webkit-background-clip: text;

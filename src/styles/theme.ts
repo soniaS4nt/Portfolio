@@ -81,7 +81,7 @@ const theme = extendTheme({
   fonts: {
     heading: 'inter',
     body: 'inter',
-  },
+  },  
   fontWeights: {
     normal: 400,
     medium: 500,
@@ -121,6 +121,7 @@ const theme = extendTheme({
   },
   sizes: {
     container: '100%',
+    
   },
   radii: {
     none: '0',
@@ -155,34 +156,10 @@ const theme = extendTheme({
   zIndices: {
     docked: 999,
   },
-  styles: {
-    global: {
-      body: {
-        /* bg: 'brand.100',
-        color: 'brand.800', */
-      },/*
-      h1: {
-        fontSize: 'heading',
-        fontWeight: 'bold',
-        lineHeight: 'heading',
-        letterSpacing: 'heading',
-      },
-
-         bg: 'linear-gradient(to right, #833ab4, #fd1d1d, #fcb045)',
-        -webkit-background-clip: 'text',
-        -webkit-text-fill-color: 'transparent',
-        font-size: '3rem',
-        font-weight: 700,
-        line-height: 1.2,
-        margin-bottom: '1rem',
-        text-align: 'center',
-        text-transform: 'uppercase', */
-    },
-  },
   components: {
     Button: {
       baseStyle: {
-        fontWeight: 'bold', // Normally, it is "semibold"
+        fontWeight: 'bold', 
       },
       sizes: {
         lg: {
@@ -191,11 +168,6 @@ const theme = extendTheme({
           px: '32px',
         },
       },
-     /*  variants: {
-        solid: (props: any) => ({
-          bg: mode('brand.500', 'brand.200')(props),
-          color: mode('white', 'gray.800')(props),
-        }), */
       },
       defaultProps: {
         size: 'lg',

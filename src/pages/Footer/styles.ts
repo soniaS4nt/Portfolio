@@ -2,18 +2,14 @@ import styled from "styled-components";
 
 export const Container = styled.footer`
     width: 100%;
-    height: 100px;
+    bottom: 0;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-top: 50px;
-    position: relative;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
 `;
 
 export const Text = styled.p`

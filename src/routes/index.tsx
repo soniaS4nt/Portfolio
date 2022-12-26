@@ -1,8 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import { Layout } from "../components";
-import { About, Contact, Home, Projects } from "../pages";
-import Footer from "../pages/Footer";
-import NotFound from "../pages/NotFound";
+import { About, Contact, Home, Projects, Footer, NotFound } from "../pages";
 
 const Routing: React.FC = () => {
   return (

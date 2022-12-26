@@ -2,6 +2,9 @@
     
   "short_name": "Portfolio",
   "name": "Portfolio Sonia Chaparro",
+  "description": "Portfolio Sonia Chaparro",
+  "homepage_url": "https://soniachaparro.github.io/Portfolio/",
+  "start_url": "/Portfolio/",
   "images": [
     {
       "src": "programer1.svg",

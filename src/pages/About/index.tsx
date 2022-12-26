@@ -1,7 +1,7 @@
 import { Container } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import about from "../../about.json";
-import { Title } from "../../styles/styles";
+import { Title, ContainerMadre } from "../../styles/styles";
 const About: React.FC = () => {
   const [language, setLanguage] = useState("En");
   const [content, setContent] = useState({ description: "" });
@@ -11,9 +11,10 @@ const About: React.FC = () => {
   });
 
   return (
-    <Container centerContent marginTop="20">
-      <Title>About</Title>
-      <select
+    <ContainerMadre>
+      <Container centerContent>
+        <Title>About</Title>
+        {/* <select
         value={language}
         onChange={(e) => {
           setLanguage(e.target.value);
@@ -21,10 +22,11 @@ const About: React.FC = () => {
       >
         <option>english</option>
         <option>spanish</option>
-      </select>
+      </select> */}
 
-      <p>{content.description}</p>
-    </Container>
+        <p>{content.description}</p>
+      </Container>
+    </ContainerMadre>
   );
 };
 export default About;
