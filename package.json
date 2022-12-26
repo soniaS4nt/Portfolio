@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.1",
   "type": "module",
+  "homepage": "https://sonias4nt.github.io/Portfolio/",
   "scripts": {
     "dev": "vite --mode development",
     "build": "tsc && vite build --mode production",

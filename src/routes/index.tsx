@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import { Layout } from "../components";
 import { About, Contact, Home, Projects } from "../pages";
+import Footer from "../pages/Footer";
 import NotFound from "../pages/NotFound";
 
 const Routing: React.FC = () => {
@@ -14,6 +15,7 @@ const Routing: React.FC = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <Footer />
     </>
   );
 };
