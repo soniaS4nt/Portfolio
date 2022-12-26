@@ -6,10 +6,6 @@ export const ContainerMadre = styled.div`
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    margin-top: inherit;
-    border-color:aqua;
-    border-style: solid;
-    border-width: 1rem;
 `;
 
 export const Title = styled.h1`
