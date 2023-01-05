@@ -15,7 +15,7 @@ import theme from "./styles/theme";
 const App: React.FC = () => {
   return (
     <ChakraProvider theme={theme}>
-      <BrowserRouter>
+      <BrowserRouter basename="/">
         <Routing />
       </BrowserRouter>
     </ChakraProvider>
