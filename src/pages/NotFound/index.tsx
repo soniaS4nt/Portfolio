@@ -1,5 +1,5 @@
 import { Container, Image, Text } from "@chakra-ui/react";
-const nofound = new URL("./nofound.svg", import.meta.url).href;
+
 const NotFound: React.FC = () => {
   return (
     <Container centerContent marginTop="20">
@@ -8,7 +8,7 @@ const NotFound: React.FC = () => {
         principal
       </Text>
 
-      <Image width="15rem" margin={20} src={nofound} alt="404" />
+      <Image width="15rem" margin={20} src="/nofound.svg" alt="404" />
     </Container>
   );
 };
