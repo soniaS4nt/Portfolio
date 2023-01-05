@@ -1,8 +1,8 @@
-import { Button, Card, CardBody, Container, Text } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
+import { Button, Card, CardBody, Text } from "@chakra-ui/react";
 import useFetchRepo from "./hooks/useFetchRepo";
 import { Title } from "../../styles/styles";
 import { ContainerGrid } from "./styles";
+import { Link } from "../Footer/styles";
 
 const RepoGithub: React.FC = () => {
   const { repositories } = useFetchRepo();
@@ -18,11 +18,16 @@ const RepoGithub: React.FC = () => {
                 {repository.name}
               </Text>
               <Text>{repository.description}</Text>
-              {/* <Button margin="2">
-                <Link target={"_blank"} to={repository.html_url}>
+
+              <Button margin="2">
+                <Link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={repository.html_url}
+                >
                   Acceder
                 </Link>
-              </Button> */}
+              </Button>
             </CardBody>
           </Card>
         ))}
