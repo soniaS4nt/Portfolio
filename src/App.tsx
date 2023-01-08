@@ -1,4 +1,3 @@
-import { HashRouter as Router } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
 import "@fontsource/inter/100.css";
 import "@fontsource/inter/200.css";
@@ -15,9 +14,7 @@ import theme from "./styles/theme";
 const App: React.FC = () => {
   return (
     <ChakraProvider theme={theme}>
-      <Router>
-        <Routing />
-      </Router>
+      <Routing />
     </ChakraProvider>
   );
 };
