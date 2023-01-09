@@ -14,16 +14,6 @@ const About: React.FC = () => {
     <ContainerMadre>
       <Container centerContent>
         <Title>About</Title>
-        {/* <select
-        value={language}
-        onChange={(e) => {
-          setLanguage(e.target.value);
-        }}
-      >
-        <option>english</option>
-        <option>spanish</option>
-      </select> */}
-
         <p>{content.description}</p>
       </Container>
     </ContainerMadre>
