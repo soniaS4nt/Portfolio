@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ButtonColorMode from "../../../ButtonColorMode";
 import {
   NavbarContainer,
   NavbarExtendedContainer,
@@ -7,10 +8,7 @@ import {
   NavbarLinkContainer,
   NavbarLinkExtended,
   OpenLinksButton,
-  RightContainer,
 } from "./styles";
-import ButtonColorMode from "../../../ButtonColorMode";
-//import { Container } from "@chakra-ui/react";
 
 const MainMenu: React.FC = () => {
   const [extendNavbar, setExtendNavbar] = useState(false);
