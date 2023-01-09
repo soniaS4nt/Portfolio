@@ -4,3 +4,11 @@ export interface Repository {
     description: string;
     html_url: string;
   }
+
+  export interface Repositories {
+    items: Repository[];
+  }
+
+  export interface Props {
+    repository: Repository;
+  }
