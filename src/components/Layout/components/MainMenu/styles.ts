@@ -44,9 +44,9 @@ export const NavbarLinkContainer = styled.div`
 `;
 
 export const NavbarLink = styled(Link)`
-  font-size: x-large;
+  font-size: large;
   text-decoration: none;
-  margin: 10px;
+  margin: 1rem;
   transition: transform .2s;
   &:hover {
     transform: scale(1.2);
