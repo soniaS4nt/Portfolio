@@ -16,14 +16,14 @@ const RepoGithub: React.FC<Props> = ({ repository }) => {
           <Text color="#ee5122" fontSize="small" aria-label="language">
             {repository.language}
           </Text>
-          <Button margin="2" aria-label="Github">
-            <Link
-              target="_blank"
-              rel="noopener noreferrer"
-              href={repository.html_url}
-            />
+
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href={repository.html_url}
+          >
             <img src={github} alt="Github" style={{ width: "1.5rem" }} />
-          </Button>
+          </Link>
         </ContainerRepo>
       </CardBody>
     </Card>

@@ -6,7 +6,7 @@ export const INFO = {
 
         noFound: "Sorry, the page you are looking for does not exist. Please check the URL or go back to the home page. Thank you!",
 
-        projects : 'Here you can see some of the projects I have done. I hope you like them!',
+        projects : 'Here you can see some of the projects I have done. I hope you like them! If you want to see more, you can visit the GitHub repository, just CLICK in the icon.',
 
         skills: [ 
                 "JavaScript",
