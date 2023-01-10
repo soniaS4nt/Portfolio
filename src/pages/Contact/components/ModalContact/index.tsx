@@ -12,9 +12,9 @@ import {
   ModalHeader,
   ModalOverlay,
   Textarea,
+  Tooltip,
   useDisclosure,
 } from "@chakra-ui/react";
-import { Title } from "../../../../styles/styles";
 
 const ModalContact: React.FC = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -24,9 +24,9 @@ const ModalContact: React.FC = () => {
 
   return (
     <>
-      <Title>Contact</Title>
-      <Button onClick={onOpen}>Email</Button>
-
+      <Tooltip label="still working on it">
+        <Button onClick={onOpen}>send me an email</Button>
+      </Tooltip>
       <Modal
         initialFocusRef={initialRef}
         finalFocusRef={finalRef}
