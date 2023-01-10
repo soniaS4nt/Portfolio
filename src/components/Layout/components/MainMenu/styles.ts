@@ -60,25 +60,13 @@ export const NavbarLink = styled(Link)`
 
 export const NavbarLinkExtended = styled(Link)`
   font-size: x-large;
-  font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   margin: 10px;
 `;
 
-export const Logo = styled.img`
-  margin: 10px;
-  max-width: 180px;
-  height: auto;
-`;
 
-export const OpenLinksButton = styled.button`
-  width: 70px;
-  height: 50px;
-  background: none;
-  border: none;
-  font-size: 45px;
-  cursor: pointer;
-  @media (min-width: 700px) {
+export const OpenLinksButton = styled.div`
+   @media (min-width: 700px) {
     display: none;
   }
 `;
