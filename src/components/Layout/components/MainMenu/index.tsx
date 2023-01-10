@@ -2,6 +2,7 @@ import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 import { IconButton } from "@chakra-ui/react";
 import { useState } from "react";
 import ButtonColorMode from "../../../ButtonColorMode";
+import { ContainerFix } from "../../../ButtonColorMode/styles";
 import {
   NavbarContainer,
   NavbarExtendedContainer,
@@ -17,13 +18,13 @@ const MainMenu: React.FC = () => {
 
   return (
     <NavbarContainer extendNavbar={extendNavbar}>
-      <ButtonColorMode />
       <NavbarInnerContainer>
         <NavbarLinkContainer>
           <NavbarLink to="/">Home</NavbarLink>
           <NavbarLink to="/about">About</NavbarLink>
           <NavbarLink to="/projects">Projects</NavbarLink>
           <NavbarLink to="/contact">Contact</NavbarLink>
+
           <OpenLinksButton>
             <IconButton
               aria-label="Search database"
@@ -40,6 +41,9 @@ const MainMenu: React.FC = () => {
             />
           </OpenLinksButton>
         </NavbarLinkContainer>
+        <ContainerFix>
+          <ButtonColorMode />
+        </ContainerFix>
       </NavbarInnerContainer>
       {extendNavbar && (
         <NavbarExtendedContainer>
