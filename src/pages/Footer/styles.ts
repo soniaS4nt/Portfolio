@@ -3,9 +3,8 @@ import styled from "styled-components";
 export const Container = styled.footer`
     width: 100%;
     bottom: 0;
-    background-color: #000;
-    color: #fff;
-    padding: 20px;
+    border-top: solid 1px ;
+    padding: 40px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
