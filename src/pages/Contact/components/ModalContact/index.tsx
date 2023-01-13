@@ -1,32 +1,22 @@
-import { useRef } from "react";
 import {
-  Button,
-  FormControl,
-  FormLabel,
-  Input,
   Modal,
   ModalBody,
   ModalCloseButton,
   ModalContent,
-  ModalFooter,
   ModalHeader,
   ModalOverlay,
-  Textarea,
-  Tooltip,
-  useDisclosure,
 } from "@chakra-ui/react";
+import { useEmailJs } from "../hooks";
+import { Button, Form, Input, TextArea } from "./styles";
 
 const ModalContact: React.FC = () => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
-
-  const initialRef = useRef(null);
-  const finalRef = useRef(null);
+  const { sendEmail, finalRef, form, initialRef, isOpen, onClose, onOpen } =
+    useEmailJs();
 
   return (
     <>
-      <Tooltip label="still working on it">
-        <Button onClick={onOpen}>send me an email</Button>
-      </Tooltip>
+      <Button onClick={onOpen}>send me an email</Button>
+
       <Modal
         initialFocusRef={initialRef}
         finalFocusRef={finalRef}
@@ -38,27 +28,33 @@ const ModalContact: React.FC = () => {
           <ModalHeader>Send me a message</ModalHeader>
           <ModalCloseButton />
           <ModalBody pb={6}>
-            <FormControl>
-              <FormLabel>First name</FormLabel>
-              <Input ref={initialRef} placeholder="First name" />
-            </FormControl>
-
-            <FormControl mt={4}>
-              <FormLabel>Last name</FormLabel>
-              <Input placeholder="Last name" />
-            </FormControl>
-            <FormControl mt={4}>
-              <FormLabel>Message</FormLabel>
-              <Textarea placeholder="Write something" />
-            </FormControl>
+            <Form ref={form} onSubmit={sendEmail}>
+              <Input
+                type="text"
+                name="fullName"
+                placeholder="Your full name"
+                minLength={10}
+                maxLength={70}
+                required
+              />
+              <Input
+                type="email"
+                name="email"
+                placeholder="Your email"
+                min={6}
+                max={70}
+                required
+              />
+              <TextArea
+                name="message"
+                placeholder="Write me something..."
+                minLength={5}
+                maxLength={300}
+                required
+              />
+              <Button type="submit">Send</Button>
+            </Form>
           </ModalBody>
-
-          <ModalFooter>
-            <Button colorScheme="blue" mr={3}>
-              Send
-            </Button>
-            <Button onClick={onClose}>Cancel</Button>
-          </ModalFooter>
         </ModalContent>
       </Modal>
     </>
