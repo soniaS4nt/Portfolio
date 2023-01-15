@@ -1,12 +1,12 @@
-import { Button, Card, CardBody, IconButton, Text } from "@chakra-ui/react";
+import { CardBody, Text } from "@chakra-ui/react";
+import github from "../../../public/github.svg";
 import { Link } from "../Footer/styles";
 import { Props } from "./interfaces";
-import github from "../../../public/github.svg";
-import { ContainerRepo } from "./styles";
+import { CardCustom, ContainerRepo, Image } from "./styles";
 
 const RepoGithub: React.FC<Props> = ({ repository }) => {
   return (
-    <Card key={repository.id} margin="2">
+    <CardCustom key={repository.id}>
       <CardBody margin="2">
         <Text color="#F50057" fontWeight="bold" fontSize="2xl">
           {repository.name}
@@ -22,11 +22,11 @@ const RepoGithub: React.FC<Props> = ({ repository }) => {
             rel="noopener noreferrer"
             href={repository.html_url}
           >
-            <img src={github} alt="Github" style={{ width: "1.5rem" }} />
+            <Image src={github} alt="Github" />
           </Link>
         </ContainerRepo>
       </CardBody>
-    </Card>
+    </CardCustom>
   );
 };
 

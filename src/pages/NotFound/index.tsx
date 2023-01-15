@@ -1,15 +1,13 @@
-import { Container, Image, Text } from "@chakra-ui/react";
-import { ContainerMadre } from "../../styles/styles";
+import { Image, Text } from "@chakra-ui/react";
+import { CustomContainer } from "../../styles/styles";
 import { INFO } from "../../utils";
 
 const NotFound: React.FC = () => {
   return (
-    <ContainerMadre>
-      <Container centerContent>
-        <Text fontSize={"2xl"}>{INFO.noFound}</Text>
-        <Image width="15rem" margin={20} src="/nofound.svg" alt="404" />
-      </Container>
-    </ContainerMadre>
+    <CustomContainer centerContent marginTop="10rem">
+      <Text fontSize={"2xl"}>{INFO.noFound}</Text>
+      <Image width="15rem" margin={20} src="/nofound.svg" alt="404" />
+    </CustomContainer>
   );
 };
 export default NotFound;

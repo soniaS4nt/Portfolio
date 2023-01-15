@@ -2,8 +2,8 @@ import { extendTheme, type ThemeConfig } from '@chakra-ui/react'
 
 
 const config: ThemeConfig = {
-  initialColorMode: 'light',
-  useSystemColorMode: false,
+  initialColorMode: 'system',
+  useSystemColorMode: true,
 }
 
 const theme = extendTheme({ 
@@ -24,7 +24,7 @@ const theme = extendTheme({
     short: 1.375,
     base: 1.5,
     tall: 1.625,
-    taller: '2',
+    taller: 2,
     heading: 1.25,
   },
   letterSpacings: {

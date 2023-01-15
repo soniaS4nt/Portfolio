@@ -1,15 +1,21 @@
-import { Container, Image } from "@chakra-ui/react";
-import { Title, ContainerMadre } from "../../styles/styles";
-
+import { Image, Text } from "@chakra-ui/react";
+import { CustomContainer, Title } from "../../styles/styles";
+import { INFO } from "../../utils";
 
 const Home: React.FC = () => {
   return (
-    <ContainerMadre>
-      <Container centerContent marginTop="20">
-        <Image width="20rem" src="/programer1.svg" alignItems="center" />
-        <Title>Sonia Chaparro</Title>
-      </Container>
-    </ContainerMadre>
+    <CustomContainer centerContent>
+      <Image
+        width="20rem"
+        src="/programer1.svg"
+        alignItems="center"
+        marginTop={10}
+      />
+      <Title>{INFO.position}</Title>
+      <Text fontSize="3xl" textAlign="center">
+        {INFO.name}
+      </Text>
+    </CustomContainer>
   );
 };
 export default Home;
