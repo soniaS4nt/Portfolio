@@ -12,6 +12,7 @@ const Home: React.FC = () => {
         src="/programer1.svg"
         alignItems="center"
         marginTop={10}
+        alt="programer"
       />
       <Title>{INFO.position}</Title>
       <Text fontSize="3xl" textAlign="center">

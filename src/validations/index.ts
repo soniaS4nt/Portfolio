@@ -1,12 +1,3 @@
-import * as yup from 'yup';
-
-export const FormSchema = yup.object().shape({
-    fullName: yup.string().required().min(10).max(30),
-    email: yup.string().email().required(),
-    message: yup.string().required().min(10).max(300),
-});
-
-
 interface IFormValues {
     fullName: string;
     email: string;
