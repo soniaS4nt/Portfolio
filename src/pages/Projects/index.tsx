@@ -1,4 +1,5 @@
 import { NavPage } from "../../components";
+import useTitle from "../../hooks/useTitle";
 import { CustomContainer, Title } from "../../styles/styles";
 import { INFO } from "../../utils";
 import RepoGithub from "../ReposGitHub";
@@ -8,6 +9,7 @@ import { ContainerNavPagebottom } from "./styles";
 
 const Projects: React.FC = () => {
   const { repositories, setPage, page } = useFetchRepo();
+  useTitle({ title: "Projects" });
 
   return (
     <CustomContainer centerContent>

@@ -1,8 +1,10 @@
 import { Image, Text } from "@chakra-ui/react";
+import useTitle from "../../hooks/useTitle";
 import { CustomContainer, Title } from "../../styles/styles";
 import { INFO } from "../../utils";
 
 const Home: React.FC = () => {
+  useTitle({ title: `${INFO.name}` });
   return (
     <CustomContainer centerContent>
       <Image
