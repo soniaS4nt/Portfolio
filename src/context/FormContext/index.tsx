@@ -1,5 +1,5 @@
-import { IContactForm } from '@models/contactForm.model'
 import React, { createContext } from 'react'
+import { IContactForm } from '@models/contactForm.model'
 
 interface InitialState {
 	form: IContactForm

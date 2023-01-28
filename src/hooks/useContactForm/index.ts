@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { IContactForm, IContactFormErrors } from 'models/contactForm.model'
-import { validateForm } from 'validations'
+import { IContactForm, IContactFormErrors } from '@models/contactForm.model'
+import { validateForm } from '@validations/index'
 
 const useContactForm = () => {
 	const [values, setValues] = useState<IContactForm>({

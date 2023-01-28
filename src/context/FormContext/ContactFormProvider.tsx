@@ -1,6 +1,6 @@
 import { PropsWithChildren, useState } from 'react'
-import { initialState, ContactFormContext } from './index'
 import { IContactForm } from '@models/contactForm.model'
+import { ContactFormContext, initialState } from '.'
 
 export const ContactFormProvider: React.FC<PropsWithChildren<{}>> = ({
 	children,
