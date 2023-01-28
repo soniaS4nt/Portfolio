@@ -1,6 +1,4 @@
-import MainMenu from "./components/MainMenu";
+import MainMenu from './components/MainMenu'
 
-const Layout: React.FC = () => 
-  <MainMenu />;
-;
-export default Layout;
+const Layout: React.FC = () => <MainMenu />
+export default Layout

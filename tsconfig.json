@@ -15,8 +15,19 @@
     "isolatedModules": true,
     "noEmit": true,
     "noImplicitAny": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "baseUrl": "./",
+    "paths": {
+      "@components/*":["src/components/*"],
+      "@context/*":["src/context/*"],
+      "@hooks/*":["src/hooks/*"],
+      "@models/*":["src/models/*"],
+      "@pages/*": ["src/pages/*"],
+      "@styles/*":["src/styles/*"],
+      "@utils/*":["src/utils/*"],
+    }
   },
-  "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+ 
+  "references": [{ "path": "./tsconfig.node.json" }],
+
 }
